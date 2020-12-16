@@ -142,7 +142,7 @@ __NOTE__: DO NOT USE THIS FOR PRODUCTION DEPLOYMENT.
 Copy and paste the follwing Kubernetes resources definition in your schell terminal 
 and press enter. It creates a file named `nfs-server.yaml`:
 
-```
+```yaml
 cat > nfs-server.yaml << EOF
 ---
 kind: PersistentVolumeClaim
