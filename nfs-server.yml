@@ -1,3 +1,6 @@
+# Simple container based  NFS server 
+# Only works for GKE, other K8s distrubution need the user of NSF IP address  
+# See https://github.com/kubernetes/minikube/issues/3417#issuecomment-670005434
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
