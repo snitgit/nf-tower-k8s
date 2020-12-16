@@ -123,21 +123,21 @@ for this Kubernetes cluster.
 ### 3. Storage configuration 
 
 This step heavily depends on the storage options available in your infra or 
-provided the by the cloud vendor. 
+provided by your cloud vendor. 
 
 Tower requires the use of a *ReadWriteMany* storage mounted in all computing 
 nodes where the pods will be dispatched.  
 
 Possible supported solution includes NFS server, GlusterFS, CephFS, Amazon FSx
 between the others. A comprehensive list is available at 
-[this link](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes).    
+[this link](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes). 
 
 The setup of such storage is beyond the scope of this guide. 
 Ask your cluster administrator for more details.  
 
 This guides shows how to configure a container based NFS server using for demoing purpose. 
 
-__NOTE__: Do not use this for production deployment. 
+__NOTE__: DO NOT USE THIS FOR PRODUCTION DEPLOYMENT. 
 
 Copy and paste the follwing Kubernetes resources definition in your schell terminal 
 and press enter. It creates a file named `nfs-server.yaml`:
