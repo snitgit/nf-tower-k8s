@@ -7,7 +7,7 @@ the deployment of Nextflow pipelines using Nextflow Tower.
 
 To allow Tower to operate with your Kubernetes cluster you will need:
 
-1. The cluster server URL and certificate or the vendor specific credentials
+1. The cluster server URL and certificate or the vendor specific credentials.
 2. A Kubernetes *namespace* and *service account* that allows the execution of Nextflow pods
 3. A [ReadWriteMany](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
 enabled shared file system used as scratch storage for the pipeline execution.
@@ -17,7 +17,7 @@ enabled shared file system used as scratch storage for the pipeline execution.
 The following steps describe the operations required to prepare your Kubernetes cluster
 in order to enable the deployment of Nextflow pipelines using Tower.
 
-For the sake of this guide it is assumed the Kubernetes cluster is already configured and
+For the sake of this guide, it is assumed the Kubernetes cluster is already configured and
 you have administration permissions.
 
 
@@ -148,7 +148,7 @@ Use the following command to modify the EKS auth configuration:
 kubectl edit configmap -n kube-system aws-auth
 ```
 
-Once the editor is opened add the following entry:
+Once the editor is open, add the following entry:
 
 ```yaml
   mapUsers: |
