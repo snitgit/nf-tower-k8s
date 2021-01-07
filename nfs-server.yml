@@ -73,6 +73,8 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
+    ## this only works with GKE, other cluster replace with nfs-server IP 
+    ## get the IP using the command `kubectl get service nfs-server`
     server: nfs-server.tower-nf.svc.cluster.local
     path: "/"
 ---
