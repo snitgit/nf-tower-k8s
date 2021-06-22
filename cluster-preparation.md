@@ -78,6 +78,9 @@ rules:
   - apiGroups: [""]
     resources: ["pods", "pods/status", "pods/log", "pods/exec", "jobs", "jobs/status", "jobs/log"]
     verbs: ["get", "list", "watch", "create", "delete"]
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: ["get", "list", "watch", "create", "delete"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
